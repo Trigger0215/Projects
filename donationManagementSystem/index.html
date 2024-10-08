@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>捐赠管理</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <h1>捐赠管理</h1>
+    <div class="top_navi">
+        <span>受捐单位</span>
+        <select id="searchFund" class="">
+            <option value="default" selected>--请选择--</option>
+        </select>
+        <button id="search" class="btn">查询</button>
+        <button class="btn">上一页</button>
+        <button class="btn">下一页</button>
+    </div>
+    <div class="main">
+        <div class="main_header">
+            <span>捐赠人:</span>
+            <input type="text" id="donator" class="input">
+            <span>受捐单位:</span>
+            <select id="addFund" class="">
+                <option value="default" selected>--请选择--</option>
+            </select>
+            <span>金额:</span>
+            <input type="text" id="money" class="input">
+            <span>受捐日期:</span>
+            <input type="text" id="date" class="input">
+            <button id="add" class="btn">新增</button>
+        </div>
+        <div class="table">
+            <table id="info">
+                <thead>
+                    <th class="index">序号</th>
+                    <th>捐赠人</th>
+                    <th>受捐单位</th>
+                    <th>金额</th>
+                    <th>受捐日期</th>
+                    <th>操作</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="editBox" class="editbox">
+        <h2>修改捐赠信息</h2>
+        <form id="editForm">
+            <div>捐赠人: <input type="text" id="editDonator" class="edit"></div>
+            <div>受捐单位: 
+                <select id="editFund">
+                </select>
+            </div>
+            <div>金额: <input type="text" id="editMoney" class="edit"></div>
+            <div>受捐日期: <input type="text" id="editDate" class="edit"></div>
+            <button id="editBtn">修改</button>
+        </form>
+    </div>
+
+    <script src="js/js_optimize.js"></script>
+</body>
+</html>
