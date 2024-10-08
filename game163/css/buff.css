@@ -1,0 +1,1033 @@
+/* initial */
+div, h2, h3, h4, h5, h6, p, span, body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul, li {
+    list-style: none;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* 大背景盒子 */
+.bigbox {
+    width: 100%;
+    min-width: 1250px;
+    height: 510px;
+    background: url("../assets/header-bg.jpg") no-repeat center top;
+}
+
+/* 右侧固定栏 */
+.floatbar {
+    width: 60px;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .6s;
+    z-index: 9999;
+
+    ul a {
+        display: block;
+        font-size: 12px;
+        color: #959595;
+        width: 60px;
+        height: 59px;
+        background-color: #343e4b;
+        border: 1px solid #2d3642;
+
+        li {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+
+            .floaticon {
+                display: block;
+                margin: 7px 0 3px 17px;
+                width: 25px;
+                height: 25px;
+                color: #848f9e;
+            }
+        };
+    };
+
+    ul a:hover {
+        background-color: #2f3744;
+    }
+
+    ul .last {
+        margin-top: 20px;
+
+        .floaticon {
+            display: block;
+            margin: 8px 10px 8px 10px;
+            width: 40px;
+            height: 40px;
+            color: #848f9e;
+        }
+    }  
+}
+
+/* 顶部导航栏 */
+.topnavi_box {
+    width: 100%;
+    min-width: 1250px;
+    height: 70px;
+    background: url("../assets/top-bg.png") no-repeat top;
+
+    .topnavi {
+        width: 1200px;
+        height: 70px;
+        margin: 0 auto;
+        border: 1px solid transparent;
+
+        .logo {
+            width: 77px;
+            height: 21px;
+            margin: 28px 48px 0 0;
+            float: left;
+
+            a img {
+                width: 77px;
+                height: 21px;
+            };
+        };
+
+        .tabs {
+            width: 184px;
+            height: 70px;
+            display: flex;
+            justify-content: start;
+            float: left;
+
+            .tab {
+                display: inline-block;
+                color: #fff;
+                font-size: 14px;
+                height: 70px;
+                line-height: 70px;
+                padding: 0 10px;
+            };
+
+            .tab:hover {
+                background-color: #99999950;
+            };
+
+            .choose {
+                border-bottom: 2px solid #4886ff;
+            };
+        };
+
+        .switch {
+            width: 195px;
+            height: 70px;
+            line-height: 70px;
+            float: right;
+
+            .switchgame {
+                height: 70px;
+                padding: 0 10px;
+                display: inline-block;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    margin: 27px 5px 0 0;
+                    float: left;
+                };
+
+                span {
+                    font-size: 14px;
+                    margin-right: 3px;
+                    color: #fff;
+                };
+
+                .arrow {
+                    width: 10px;
+                    color: #999;
+                };
+
+                .droplist {
+                    width: 200px;
+                    height: 72px;
+                    font-size: 14px;
+                    border: 1px solid #282f38;
+                    background-color: #313a44;
+                    position: absolute;
+                    top: 58px;
+                    left: 10px;
+                    display: none;
+                    z-index: 999;
+
+                    .droplisttab {
+                        width: 200px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #fff;
+
+                        .icon {
+                            width: 16px;
+                            height: 16px;
+                            margin: 10px 5px 0 5px;
+                        };
+                    };
+
+                    .droplisttab:hover {
+                        background-color: #3a4452;
+
+                    }
+                };
+                
+                .droplist:hover + .droplist {
+                    display: block;
+                }
+            };
+
+            .switchgame:hover {
+                .droplist {
+                    display: block;
+                };
+
+                .arrow {
+                    transform: rotate(180deg);
+                    color: #eee;
+                }
+            }
+
+            .login {
+                display: inline-block;
+                height: 70px;
+                font-size: 14px;
+                color: #fff;
+                padding: 0 10px;
+            };
+
+            .login:hover {
+                background-color: #99999950;
+            }
+        };
+    };
+}
+
+/* 轮播图 */
+.carouselbox {
+    width: 100%;
+    min-width: 1250px;
+    height: 440px;
+    cursor: pointer;
+
+    .carousel {
+        width: 1250px;
+        height: 440px;
+        margin: 0 auto;
+        position: relative;
+
+        .textcontent {
+            width: 900px;
+            height: 380px;
+            padding-left: 80px;
+            position: absolute;
+
+            .carouseltitle {
+                max-width: 900px;
+                height: 72px;
+                line-height: 72px;
+                font-weight: 700;
+                padding: 86px 0 32px 0;
+                margin: 0;
+                font-size: 60px;
+                color: #fff;
+                transition: all .6s;
+            };
+
+            .carouseldesc {
+                max-width: 900px;
+                height: 28px;
+                line-height: 28px;
+                font-size: 28px;
+                margin: 0;
+                color: #D3D4D6;
+                transition: all .6s;
+            };
+
+            .rollbar {
+                width: 330px;
+                height: 20px;
+                line-height: 14px;
+                margin-top: 100px;
+                /* background-color: pink; */
+
+                li {
+                    display: inline-block;
+                    width: 30px;
+                    height: 5px;
+                    line-height: 5px;
+                    background-color: #434c5b;
+                    cursor: pointer;
+                    transform: skewX(-45deg);
+                };
+
+                li:hover {
+                    width: 60px;
+                    margin-top: 4px;
+                    border: 2px solid #4782f5;
+                    background-color: #4782f5;
+                    vertical-align: middle;
+                }
+
+                .cur {
+                    width: 60px;
+                    margin-top: 4px;
+                    border: 2px solid #4782f5;
+                    background-color: #4782f5;
+                    vertical-align: middle;
+                };
+            };
+        };
+
+        .imgcontent {
+            width: 660px;
+            height: 400px;
+            position: absolute;
+            right: 0;
+
+            .carouselpic {
+                width: 960px;
+                height: 400px;
+                vertical-align: middle;
+                opacity: 0;
+                position: absolute;
+                transform: translateX(60px);
+                transition: all .6s;
+            };
+
+            .carouselpic.cur {
+                transform: translateX(0);
+                opacity: 1;
+                transition: all .6s;
+            }
+        };
+    };
+}
+
+/* 第一部分 */
+.section1box {
+    width: 100%;
+    height: 550px;
+    padding: 60px 0;
+    background: url("../assets/index-section1-bg.jpg") no-repeat center top;
+
+    .section1 {
+        width: 1200px;
+        height: 550px;
+        margin: 0 auto;
+
+        .yellowtitle {
+            width: 1142px;
+            height: 38px;
+            margin: 0 auto;
+            border-bottom: 1px solid #BF9E4B;
+
+            .header {
+                float: left;
+                width: 130px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                margin-right: 40px;
+                background: #BF9E4B;
+                background-image: linear-gradient(270deg, rgba(206, 170, 52, .8) 0, rgba(189, 149, 42, .8) 36%, rgba(160, 113, 24, .8) 100%);
+            };
+
+            .select li {
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                border-bottom: 3px solid #BF9E4B;
+                /* border-bottom: 3px solid transparent; */
+                margin-left: 40px;
+                color: #929394;
+                cursor: pointer;
+            };
+
+            .select li:hover {
+                color: #eea20e;
+            }
+
+            .tomarket {
+                float: right;
+                display: block;
+                width: 80px;
+                height: 38px;
+                line-height: 38px;
+                color: #929394;
+                font-size: 14px;
+
+                .jump_icon {
+                    color: #eea20e;
+                };
+            };
+
+            .tomarket:hover {
+                color: #eea20e;
+            };
+        };
+
+        .hotgoods {
+            width: 1150px;
+            height: 552px;
+            margin: 0 auto;
+            padding: 22px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .goods {
+                width: 208px;
+                height: 218px;
+                border: 1px solid #dbdbdb;
+                border-radius: 2px;
+                background-color: #fff;
+                position: relative;
+
+                .pic {
+                    display: block;
+                    width: 208px;
+                    height: 136px;
+                    padding-bottom: 25px;
+                    background-image: url("../assets/buff-good-bg.png");
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+
+                    .showvalue {
+                        display: block;
+                        float: left;
+                        width: 48px;
+                        height: 18px;
+                        line-height: 18px;
+                        padding: 0 2px;
+                        margin-right: 1px;
+                        /* background-color: #488b48; */
+                        font-size: 12px;
+                        color: #fff;
+                    };
+
+                    .tagrank {
+                        display: block;
+                        float: left;
+                        font-size: 12px;
+                        height: 18px;
+                        line-height: 18px;
+                        color: #b1b7bc;
+                        background-color: #5f5f5f;
+                        padding: 0 2px;
+                        margin-right: 1px;
+                        cursor: default;
+                        position: relative;
+
+                        .info {
+                            width: 135px;
+                            height: 20px;
+                            padding: 8px;
+                            background-color: #070707;
+                            color: #b1b7bc;
+                            font-size: 14px;
+                            position: absolute;
+                            top: 20px;
+                            left: -65px;
+                            z-index: 111;
+                            display: none;
+                        };
+
+                        .info:hover {
+                            display: block;
+                        };
+                    };
+
+                    .tagrank:hover {
+                        .info {
+                            display: block;
+                        };
+                    };
+
+                    .count {
+                        display: block;
+                        float: left;
+                        width: 56px;
+                        height: 18px;
+                        line-height: 18px;
+                        padding: 0 2px;
+                        margin-right: 1px;
+                        background-color: #14181f;
+                        color: #cf6a32;
+                        font-size: 12px;
+                    }
+
+                    .printing1 {
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 22px;
+                        top: 110px;
+                        left: 5px;
+                        z-index: 99;
+
+                        img {
+                            width: 30px;
+                            height: 22px;
+                        };
+                    };
+
+                    .printing2 {
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 22px;
+                        top: 110px;
+                        left: 35px;
+                        z-index: 99;
+
+                        img {
+                            width: 30px;
+                            height: 22px;
+                        };
+                    };
+
+                    .printing3 {
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 22px;
+                        top: 110px;
+                        z-index: 99;
+                        left: 65px;
+
+                        img {
+                            width: 30px;
+                            height: 22px;
+                        };
+                    };
+
+                    .printing4 {
+                        display: block;
+                        position: absolute;
+                        width: 30px;
+                        height: 22px;
+                        top: 110px;
+                        z-index: 99;
+                        left: 95px;
+
+                        img {
+                            width: 30px;
+                            height: 22px;
+                        };
+                    };
+
+                    img {
+                        width: 136px;
+                        height: 136px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    };
+                };
+
+                .wear {
+                    width: 200px;
+                    height: 24px;
+                    position: absolute;
+                    overflow: hidden;
+                    top: 137px;
+                    padding-right: 8px;
+
+                    .value {
+                        width: 200px;
+                        height: 20px;
+                        line-height: 20px;
+                        padding-right: 8px;
+                        margin-top: -1px;
+                        font-size: 12px;
+                        color: #959595;
+                        background: #2d2f3e;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    };
+
+                    .point {
+                        width: 100%;
+                        margin-top: -3px;
+                        position: absolute;
+                        padding-bottom: 4px;
+
+                        .pointicon {
+                            left: 11%; /* 磨损度 */
+                            margin-left: -6px;
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 5px 5px 0 5px;
+                            border-color: #fff transparent transparent transparent;
+                        };
+                    };
+
+                    .progressbar {
+                        width: 208px;
+                        height: 5px;
+                        overflow: hidden;
+                        transition: width .6s ease;
+
+                        .new {
+                            float: left;
+                            width: 7%;
+                            height: 5px;
+                            background-color: green;
+                        };
+
+                        .little {
+                            float: left;
+                            width: 8%;
+                            height: 5px;
+                            background-color: #5cb85c;
+                        };
+
+                        .normal {
+                            float: left;
+                            width: 23%;
+                            height: 5px;
+                            background-color: #f0ad4e;
+                        };
+
+                        .bad {
+                            float: left;
+                            width: 7%;
+                            height: 5px;
+                            background-color: #d9534f;
+                        };
+
+                        .old {
+                            float: left;
+                            width: 55%;
+                            height: 5px;
+                            background-color: #993a38;
+                        }
+                    };
+                };
+
+                .goodsdesc {
+                    width: 184px;
+                    height: 24px;
+                    margin: 6px 12px 0 12px;
+                    font-size: 14px;
+                    color: #333;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-weight: 400;
+                };
+
+                .goodsdesc:hover a {
+                    color: #eea20e;
+                }
+
+                .goodsprice {
+                    width: 184px;
+                    height: 16px;
+                    margin: 4px 12px 6px 12px;
+                    font-size: 14px;
+                    color: #eea20e;
+                    font-weight: 700;
+                }
+            };
+
+            .goods:hover {
+                border-color: #eea20e;
+            }
+        };
+    };
+}
+
+/* 第二部分 */
+.section2box {
+    width: 100%;
+    height: 552px;
+    padding: 60px 0;
+    background: url("../assets/index-section2-bg.jpg") no-repeat center top;
+
+    .section2 {
+        width: 1200px;
+        height: 552px;
+        margin: 0 auto;
+
+        .bluetitle {
+            width: 1142px;
+            height: 38px;
+            margin: 0 auto;
+            border-bottom: 1px solid #3D547D;
+
+            .header {
+                float: left;
+                width: 130px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                margin-right: 40px;
+                background: #3D547D;
+                background-image: linear-gradient(270deg, rgba(91, 126, 176, .8) 0, rgba(46, 71, 120, .8) 100%);
+            };
+
+            .select li {
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                border-bottom: 3px solid #3D547D;
+                /* border-bottom: 3px solid transparent; */
+                margin-left: 40px;
+                color: #929394;
+                cursor: pointer;
+            };
+
+            .select li:hover {
+                color: #eea20e;
+            }
+
+            .tomarket {
+                float: right;
+                display: block;
+                width: 80px;
+                height: 38px;
+                line-height: 38px;
+                color: #929394;
+                font-size: 14px;
+
+                .jump_icon {
+                    color: #eea20e;
+                };
+            };
+
+            .tomarket:hover {
+                color: #eea20e;
+            };
+        };
+
+        .goodscontent {
+            width: 1150px;
+            height: 478px;
+            padding: 22px 0;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .goods {
+                width: 206px;
+                height: 208px;
+                padding-bottom: 9px;
+                border: 1px solid #3f4347;
+                border-radius: 2px;
+                background-color: #fff;
+
+                .pic {
+                    display: block;
+                    width: 206px;
+                    height: 138px;
+                    background-image: url("../assets/buff-good-bg.png");
+                    background-size: cover;
+
+                    img {
+                        width: 138px;
+                        height: 138px;
+                        margin: 0 34px;
+                    };
+                };
+
+                .goodsdesc {
+                    font-size: 15px;
+                    color: #333;
+                    max-width: 190px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin: 8px 12px 22px 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    a {
+                        font-size: 15px;
+                        color: #333;
+                        font-weight: 400;
+                    };
+
+                    a:hover {
+                        color: #eea20e;
+                    };
+                };
+
+                .goodsprice {
+                    width: 182px;
+                    height: 19px;
+                    margin: 6px 12px;
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: #eea20e;
+
+                    .small {
+                        font-size: 14px;
+                        margin-left: -4px;
+                    };
+                };
+            };
+
+            .goods:hover {
+                border-color: #eea20e;
+            }
+        };
+    };
+}
+
+/* 第三部分 */
+.section3box {
+    width: 100%;
+    height: 552px;
+    padding: 60px 0;
+    background: url("../assets/index-section3-bg.jpg") no-repeat center top;
+
+    .section3 {
+        width: 1200px;
+        height: 552px;
+        margin: 0 auto;
+
+        .yellowtitle {
+            width: 1142px;
+            height: 38px;
+            margin: 0 auto;
+            border-bottom: 1px solid #BF9E4B;
+
+            .header {
+                float: left;
+                width: 130px;
+                height: 38px;
+                line-height: 38px;
+                text-align: center;
+                font-size: 18px;
+                color: #fff;
+                margin-right: 40px;
+                background: #BF9E4B;
+                background-image: linear-gradient(270deg, rgba(206, 170, 52, .8) 0, rgba(189, 149, 42, .8) 36%, rgba(160, 113, 24, .8) 100%);
+            };
+
+            .select li {
+                float: left;
+                height: 35px;
+                line-height: 35px;
+                border-bottom: 3px solid #BF9E4B;
+                /* border-bottom: 3px solid transparent; */
+                margin-left: 40px;
+                color: #929394;
+                cursor: pointer;
+            };
+
+            .select li:hover {
+                color: #eea20e;
+            }
+
+            .tomarket {
+                float: right;
+                display: block;
+                width: 80px;
+                height: 38px;
+                line-height: 38px;
+                color: #929394;
+                font-size: 14px;
+
+                .jump_icon {
+                    color: #eea20e;
+                };
+            };
+
+            .tomarket:hover {
+                color: #eea20e;
+            };
+        };
+
+        .goodscontent {
+            width: 1150px;
+            height: 478px;
+            padding: 22px 0;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .goods {
+                width: 206px;
+                height: 208px;
+                padding-bottom: 9px;
+                border: 1px solid #dbdbdb;
+                border-radius: 2px;
+                background-color: #fff;
+
+                .pic {
+                    display: block;
+                    width: 206px;
+                    height: 138px;
+                    background-image: url("../assets/buff-good-bg.png");
+                    background-size: cover;
+
+                    img {
+                        width: 138px;
+                        height: 138px;
+                        margin: 0 34px;
+                    };
+                };
+
+                .goodsdesc {
+                    font-size: 15px;
+                    color: #333;
+                    max-width: 190px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin: 8px 12px 22px 12px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                    a {
+                        font-size: 15px;
+                        color: #333;
+                        font-weight: 400;
+                    };
+
+                    a:hover {
+                        color: #eea20e;
+                    };
+                };
+
+                .goodsprice {
+                    width: 182px;
+                    height: 19px;
+                    margin: 6px 12px;
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: #eea20e;
+
+                    .small {
+                        font-size: 14px;
+                        margin-left: -4px;
+                    };
+                };
+            };
+
+            .goods:hover {
+                border-color: #eea20e;
+            }
+        };
+    };
+}
+
+/* footer */
+.footerbox {
+    width: 100%;
+    height: 300px;
+    background-color: #28292b;
+
+    .guide {
+        width: 1200px;
+        height: 200px;
+        margin: 0 auto;
+        padding: 50px 0 20px 100px;
+        display: flex;
+        justify-content: space-between;
+
+        .guidesection {
+            width: 228px;
+            height: 140px;
+
+            h3 {
+                font-size: 15px;
+                font-weight: 700;
+                color: #e4e8ee;
+                max-width: 228px;
+                height: 15px;
+                line-height: 15px;
+                margin: 9px 0;
+            };
+
+            .line {
+                width: 12px;
+                border-top: 1px solid #4773c8;
+                border-bottom: 1px solid #4773c8;
+            };
+
+            ul li {
+                max-width: 228px;
+                height: 20px;
+                line-height: 20px;
+                margin: 12px 0;
+
+                a {
+                    font-size: 14px;
+                    color: #959595;
+                };
+
+                a:hover {
+                    color: #eea20e;
+                };
+
+                img {
+                    width: 75px;
+                    height: 75px;
+                    padding: 3px
+                };
+            };
+
+            .method li {
+                color: #959595;
+                font-size: 14px;
+                height: 20px;
+                line-height: 20px;
+
+                .way {
+                    width: 20px;
+                    height: 20px;
+                }
+            };
+        };
+    };
+
+    .copyright {
+        width: 1024px;
+        height: 20px;
+        font-size: 12px;
+        color: #959595;
+        text-align: center;
+        padding-bottom: 10px;
+        margin: 0 auto;
+
+        a {
+            color: #959595;
+        };
+
+        a:hover {
+            color: #eea20e;
+        };
+    };
+}

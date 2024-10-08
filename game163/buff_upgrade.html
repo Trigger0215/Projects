@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易BUFF饰品交易平台_CS2饰品交易_DOTA2饰品交易</title>
+    <link rel="stylesheet" href="css/buff.css">
+    <link rel="stylesheet" href="css/buff_upgrade.css">
+</head>
+<body>
+    <!-- 顶部总盒子(放背景用) -->
+    <div id="top" class="bigbox">
+    
+        <!-- 右侧固定栏 -->
+        <div class="floatbar">
+        <ul>
+            <a href="#">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-shouji"></use>
+                    </svg>
+                    App
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-shoucang"></use>
+                    </svg>
+                    收藏
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-weixin"></use>
+                    </svg>
+                    公众号
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                    微博
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-bangzhuyushuoming"></use>
+                    </svg>
+                    帮助
+                </li>
+            </a>
+            <a href="#">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-fankui"></use>
+                    </svg>
+                    反馈
+                </li>
+            </a>
+            <a href="#top" class="last">
+                <li>
+                    <svg class="icon floaticon" aria-hidden="true">
+                        <use xlink:href="#icon-FixedTool_zhiding_youzi_icon"></use>
+                    </svg>
+                </li>
+            </a>
+        </ul>
+        </div>
+
+        <!-- 顶部导航栏 -->
+        <div class="topnavi_box">
+            <div class="topnavi">
+                <div class="logo">
+                <a href="#">
+                    <img src="assets/buff-logo.png" />
+                </a>
+                </div>
+                <div class="tabs">
+                <a href="#" class="tab choose">首页</a>
+                <a href="#" class="tab">饰品市场</a>
+                <a href="#" class="tab">资讯</a>
+                </div>
+                <div class="switch">
+                <div class="switchgame">
+                    <span id="nowcontent">CS2</span>
+                    <svg class="icon arrow" aria-hidden="true">
+                        <use xlink:href="#icon-shangjiantou"></use>
+                    </svg>
+                    <!-- 下拉框 -->
+                    <div id="droplist" class="droplist">
+                        <p class="droplisttab">
+                            <img src="assets/logo_csgo2.png" class="icon" />
+                            CS2
+                        </p>
+                        <p class="droplisttab">
+                            <img src="assets/logo_dota_black.png"  class="icon" />
+                            DOTA2
+                        </p>
+                    </div>
+                </div>
+                <a href="#" class="login">登录/注册</a>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播图 -->
+        <div class="carouselbox">
+            <div class="carousel">
+                <div class="textcontent">
+                    <!-- 轮播文字标题 -->
+                    <h1 id="carouselTitle" class="carouseltitle">
+                        
+                    </h1>
+                    <!-- 轮播文字简介 -->
+                    <p id="carouselDesc" class="carouseldesc">
+                        
+                    </p>
+                    <!-- 轮播小长条 -->
+                    <ul id="rollbar" class="rollbar">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="imgContent" class="imgcontent">
+                    <!-- 轮播图片 -->
+                    <img src="assets/carousel1.png" class="carouselpic" />
+                    <img src="assets/carousel2.png" class="carouselpic" />
+                    <img src="assets/carousel3.png" class="carouselpic" />
+                    <img src="assets/carousel4.png" class="carouselpic" />
+                    <img src="assets/carousel5.png" class="carouselpic" />
+                    <img src="assets/carousel6.png" class="carouselpic" />
+                    <img src="assets/carousel7.png" class="carouselpic" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体第一部分 -->
+    <div class="section1box">
+        <div class="section1">
+            <div class="yellowtitle">
+                <h2 class="header">热门饰品</h2>
+                <ul id="section1Select" class="select">
+                    <li>
+                        <img src="assets/logo_csgo2.png" />
+                        CS2
+                    </li>
+                    <li style="border-color: transparent;">
+                        <img src="assets/logo_dota_black.png" />
+                        DOTA2
+                    </li>
+                </ul>
+                <a href="#" class="tomarket">
+                    进入市场
+                    <svg class="icon jump_icon" aria-hidden="true">
+                        <use xlink:href="#icon-youjiantou"></use>
+                    </svg>
+                </a>
+            </div>
+            <div id="hotGoods" class="hotgoods">
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体第二部分 -->
+    <div class="section2box">
+        <div class="section2">
+            <div class="bluetitle">
+                <h2 class="header">最新上架</h2>
+                <ul id="section2Select" class="select">
+                    <li>
+                        <img src="assets/logo_csgo2.png" />
+                        CS2
+                    </li>
+                    <li style="border-color: transparent;">
+                        <img src="assets/logo_dota_black.png" />
+                        DOTA2
+                    </li>
+                </ul>
+                <a href="#" class="tomarket">
+                    进入市场
+                    <svg class="icon jump_icon" aria-hidden="true">
+                        <use xlink:href="#icon-youjiantou"></use>
+                    </svg>
+                </a>
+            </div>
+            <div id="section2Goods" class="goodscontent">
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主体第三部分 -->
+    <div class="section3box">
+        <div class="section3">
+            <div class="yellowtitle">
+                <h2 class="header">最新求购</h2>
+                <ul id="section3Select" class="select">
+                    <li>
+                        <img src="assets/logo_csgo2.png" />
+                        CS2
+                    </li>
+                    <li style="border-color: transparent;">
+                        <img src="assets/logo_dota_black.png" />
+                        DOTA2
+                    </li>
+                </ul>
+                <a href="#" class="tomarket">
+                    进入市场
+                    <svg class="icon jump_icon" aria-hidden="true">
+                        <use xlink:href="#icon-youjiantou"></use>
+                    </svg>
+                </a>
+            </div>
+            <div id="section3Goods" class="goodscontent">
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+                <div class="goods"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footerbox">
+        <div class="guide">
+            <div class="guidesection">
+                <h3>账号设置</h3>
+                <div class="line"></div>
+                <ul>
+                    <li>
+                        <a href="#">交易设置</a>
+                    </li>
+                    <li>
+                        <a href="#">实名认证</a>
+                    </li>
+                    <li>
+                        <a href="#">交易防骗指南</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guidesection">
+                <h3>钱包相关</h3>
+                <div class="line"></div>
+                <ul>
+                    <li>
+                        <a href="#">收费标准</a>
+                    </li>
+                    <li>
+                        <a href="#">提现答疑</a>
+                    </li>
+                    <li>
+                        <a href="#">违规账号处罚公示</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guidesection">
+                <h3>交易相关</h3>
+                <div class="line"></div>
+                <ul>
+                    <li>
+                        <a href="#">交易报价失败原因汇总</a>
+                    </li>
+                    <li>
+                        <a href="#">新手常见问题</a>
+                    </li>
+                    <li>
+                        <a href="#">什么是交易暂挂</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="guidesection">
+                <h3>便捷支付</h3>
+                <div class="line"></div>
+                <ul class="method">
+                    <li>
+                        <svg class="icon way" aria-hidden="true">
+                            <use xlink:href="#icon-zhifubaozhifu"></use>
+                        </svg>
+                        支付宝支付
+                    </li>
+                    <li>
+                        <svg class="icon way" aria-hidden="true">
+                            <use xlink:href="#icon-yinhangqia"></use>
+                        </svg>
+                        银行卡支付
+                    </li>
+                    <li>
+                        <svg class="icon way" aria-hidden="true">
+                            <use xlink:href="#icon-weixinzhifu"></use>
+                        </svg>
+                        微信支付
+                    </li>
+                </ul>
+            </div>
+            <div class="guidesection">
+                <h3>手机 BUFF</h3>
+                <div class="line"></div>
+                <ul style="height: 84px;">
+                    <li style="height: 84px;">
+                        <img src="assets/buff-qrcode.png" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>网易公司版权所有 ©1997-2024</span>
+            <a href="#">网易BUFF隐私政策及儿童个人信息保护规则</a>
+            <a href="#">ICP备案：粤B2-20090191-18</a>
+        </div>
+    </div>
+
+    <script src="js/iconfont_buff.js"></script>
+    <script src="js/buff.js"></script>
+
+    <!-- 引入函数方法以调用渲染 -->
+    <script src="js/buff_function.js"></script>
+    <!-- 引入数据以达成数据驱动 -->
+    <script src="js/buff_data.js"></script>
+    <!-- 引入数据驱动文件 -->
+    <script src="js/buff_datadriven.js"></script>
+</body>
+</html>

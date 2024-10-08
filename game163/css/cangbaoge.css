@@ -1,0 +1,741 @@
+/* initial */
+div, h2, h3, h4, h5, h6, p, span, body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul, li {
+    list-style: none;
+}
+body {
+    background-color: #f7f7f7;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+/* 顶部logo条 */
+.head_bar {
+    width: 100%;
+    height: 50px;
+    background-color: #1a1a1a;
+    .head {
+        width: 1260px;
+        height: 50px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .logo1 {
+            width: 82px;
+            height: 30px;
+            margin: 10px 0 10px 24px;
+        };
+
+        span {
+            display: inline-block;
+            width: 148px;
+            height: 31px;
+
+            .logo2 {
+                width: 148px;
+                height: 31px;
+                margin: 10px 0 10px 0;
+            };
+        };
+
+        .download {
+            display: inline-block;
+            width: 88px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            padding: 0 10px;
+            margin: 9px 24px 9px 0;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+        };
+    };
+}
+
+/* 背景图 */
+.bg {
+    width: 100%;
+    min-width: 1260px;
+    height: 240px;
+    background: url(../assets/cbg-bg.png) no-repeat;
+    background-position: center;
+    position: relative;
+
+    .shadow {
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        z-index: 666;
+        background: linear-gradient(180deg, rgba(247, 247, 247, 0) 0%, #F7F7F7 100%);
+    };
+}
+
+/* 主体 */
+.main {
+    width: 1260px;
+    height: 604px;
+    margin: 0 auto;
+    position: relative;
+
+    /* 手游 */
+    .mobile_game {
+        width: 700px;
+        height: 556px;
+        padding: 24px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        z-index: 1001;
+
+        h2 {
+            width: 700px;
+            height: 24px;
+            font-size: 18px;
+            color: #1a1a1a;
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+                float: left;
+            };
+        };
+
+        .infos_box {
+            width: 700px;
+            height: 92px;
+            margin: 16px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .info {
+                width: 180px;
+                height: 40px;
+                padding: 24px 20px 24px 24px;
+                background: linear-gradient(180deg, #fff7f7, #fffbfb);
+                border: 1px solid #fffbfb;
+                border-radius: 10px;
+                position: relative;
+                cursor: pointer;
+
+                .name {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 16px;
+                    max-width: 114px;
+                    margin-bottom: 6px;
+                    color: #1a1a1a;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis
+                };
+
+                .desc {
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #888;
+                    max-width: 100px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                };
+
+                img {
+                    width: 76px;
+                    height: 98px;
+                    position: absolute;
+                    top: -10px;
+                    right: 0;
+                }
+            };
+
+            .info:hover {
+                border: 1px solid #ffeaea;
+                box-shadow: 0 4px 12px 0 #F9A2A229;
+            };
+        };
+
+        .gamelist {
+            width: 700px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            position: relative;
+
+            .icon {
+                width: 38px;
+                height: 23px;
+                position: absolute;
+                top: 2px;
+                left: 48px;
+                z-index: 11;
+            };
+
+            a {
+                display: block;
+                width: 87px;
+                height: 100px;
+                text-align: center;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                    margin-top: 16px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 23px 0 #FF3A3600;
+                    transition: all .4s;
+                };
+
+                span {
+                    display: block;
+                    color: #555;
+                    font-size: 12px;
+                    padding: 8px 1px 10px;
+                    max-width: 86px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                };
+            };
+
+            a:hover {
+                background-color: #FAFAFA;
+
+                img {
+                    transform: scale(1.263);
+                    box-shadow: 0 4px 23px 0 #FF3A3666;
+                };
+            };
+        };
+    };
+
+    /* 端游 */
+    .pc_game {
+        width: 438px;
+        height: 556px;
+        padding: 24px;
+        background-color: #fff;
+        border: 1px solid #fff;
+        border-radius: 20px;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        z-index: 1001;
+
+        h2 {
+            width: 438px;
+            height: 24px;
+            font-size: 18px;
+            color: #1a1a1a;
+
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+                float: left;
+            };
+        };
+
+        .infos_box {
+            width: 438px;
+            height: 92px;
+            margin: 16px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .info {
+                width: 168px;
+                height: 40px;
+                padding: 24px 20px 24px 20px;
+                background: linear-gradient(180deg, #fff7f7, #fffbfb);
+                border: 1px solid #fffbfb;
+                border-radius: 10px;
+                position: relative;
+                cursor: pointer;
+
+                .name {
+                    display: block;
+                    font-weight: 600;
+                    font-size: 16px;
+                    max-width: 114px;
+                    margin-bottom: 6px;
+                    color: #1a1a1a;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis
+                };
+
+                .desc {
+                    font-weight: 400;
+                    font-size: 12px;
+                    color: #888;
+                    max-width: 100px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                };
+
+                img {
+                    width: 76px;
+                    height: 98px;
+                    position: absolute;
+                    top: -10px;
+                    right: 0;
+                };
+            };
+
+            .info:hover {
+                border: 1px solid #ffeaea;
+                box-shadow: 0 4px 12px 0 #F9A2A229;
+            };
+        };
+
+        .gamelist {
+            width: 438px;
+            height: 400px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            position: relative;
+
+            .icon {
+                width: 38px;
+                height: 23px;
+                position: absolute;
+                top: 2px;
+                right: 90px;
+                z-index: 11;
+            };
+
+            a {
+                display: block;
+                width: 87px;
+                height: 100px;
+                text-align: center;
+
+                img {
+                    width: 48px;
+                    height: 48px;
+                    margin-top: 16px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 23px 0 #FF3A3600;
+                    transition: all .4s;
+                };
+
+                span {
+                    display: block;
+                    color: #555;
+                    font-size: 12px;
+                    padding: 8px 1px 10px;
+                    max-width: 86px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                };
+            };
+
+            a:hover {
+                background-color: #FAFAFA;
+
+                img {
+                    transform: scale(1.263);
+                    box-shadow: 0 4px 23px 0 #FF3A3666;
+                };
+            };
+        };
+    };
+}
+
+/* 新手必看栏 */
+.noob_see {
+    width: 1260px;
+    height: 246px;
+    margin: 0 auto;
+    margin-top: 54px;
+
+    .header {
+        width: 100%;
+        height: 40px;
+
+        img {
+            width: 96px;
+            height: 40px;
+            margin-left: 24px;
+        };
+    };
+
+    .card_boxes {
+        width: 1260px;
+        height: 190px;
+        margin: 16px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            display: block;
+            width: 400px;
+            height: 188px;
+            background: #fff no-repeat right;
+            border: 1px solid #fff;
+            border-radius: 18px;
+            transition: all .4s;
+
+            .title {
+                font-weight: 600;
+                font-size: 18px;
+                color: #1A1A1A;
+                padding: 28px 24px 16px;
+                margin-bottom: 16px;
+                max-width: 490px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                .line {
+                    display: block;
+                    width: 50px;
+                    border-top: 1px solid #ffddd9;
+                    margin-top: 15px;
+                };
+            };
+
+            .content {
+                display: block;
+                font-size: 14px;
+                color: #888;
+                width: 356px;
+                height: 45px;
+                padding: 0 24px;
+            };
+
+            .others {
+                display: block;
+                font-weight: 400;
+                font-size: 14px;
+                color: rgba(175, 175, 175, 0.6);
+                padding: 0 24px;
+                height: 20px;
+                margin-top: 13px;
+                transition: all .4s;
+
+                .number {
+                    float: left;
+                }
+
+                .more {
+                    float: right;
+
+                    .arrow {
+                        font-size: 16px;
+                    };
+                };
+            };
+        };
+
+        .card:hover {
+            background: url(../assets/item-bg.svg) no-repeat top right;
+            background-color: #fff;
+
+            .content {
+                color: #555;
+            };
+
+            .others {
+                color: #555;
+
+                .more .arrow {
+                    background-color: black;
+                    color: #fff;
+                    border-radius: 8px;
+                };
+            };
+        };
+    };
+}
+
+/* 新闻公告&下载APP */
+.newsanddownload {
+    width: 1260px;
+    height: 359px;
+    margin: 0 auto;
+    margin-top: 54px;
+    
+/* 新闻公告 */
+    .news {
+        width: 832px;
+        height: 359px;
+        float: left;
+
+        .title {
+            max-width: 808px;
+            height: 40px;
+            margin-left: 24px;
+
+            img {
+                width: 96px;
+                height: 40px;
+            };
+
+            .more {
+                display: block;
+                font-size: 14px;
+                height: 40px;
+                line-height: 40px;
+                float: right;
+                color: #afafaf99;
+                margin-right: 24px;
+
+                .add {
+                    transition: all .6s;
+                    font-size: 16px;
+                };
+            };
+
+            .more:hover {
+                color: #afafaf;
+
+                .add {
+                    transform: rotate(360deg);
+                }
+            };
+        };
+
+        .news_card {
+            width: 830px;
+            height: 301px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            border-radius: 18px;
+            margin-top: 16px;
+
+            ul li {
+                display: block;
+                width: 784px;
+                height: 75px;
+                margin: 0 24px;
+                border-bottom: 1px solid rgba(239, 239, 239, 0.5);
+
+                .infos {
+                    display: block;
+                    float: left;
+                    width: 600px;
+                    height: 75px;
+
+                    .maininfo {
+                        display: block;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #1A1A1A;
+                        padding-top: 30px;
+                        transition: all .3s ease-out;
+                        max-width: 600px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    };
+        
+                    .descinfo {
+                        display: block;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #888888;
+                        padding-top: 10px;
+                        transition: all .3s ease-out;
+                        opacity: 0;
+                        max-width: 600px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    };
+                };
+
+                .infos:hover {
+                    .maininfo {
+                        padding-top: 18px; 
+                    };
+                    .descinfo {
+                        opacity: 1;
+                    }
+                };
+
+                .date {
+                    float: right;
+                    line-height: 75px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #888888;
+                    opacity: .5;
+                };                
+            };
+        };
+    };
+
+/* 下载App */
+    .download {
+        width: 404px;
+        height: 359px;
+        float: right;
+
+        .title {
+            max-width: 404px;
+            height: 40px;
+            margin-left: 24px;
+
+            img {
+                width: 96px;
+                height: 40px;
+            };
+        };
+
+        .download_card {
+            width: 402px;
+            height: 301px;
+            border: 1px solid #fff;
+            background-color: #fff;
+            border-radius: 18px;
+            margin-top: 16px;
+
+            img {
+                width: 191px;
+                height: 191px;
+                padding: 7px;
+                border: 1px solid #f2f2f2;
+                border-radius: 18px;
+                margin: 48px 0 0 24px;
+                float: left;
+            };
+
+            .downloadbox {
+                width: 134px;
+                height: 208px;
+                float: right;
+                margin: 48px 24px 0 0;
+
+                .up {
+                    margin-bottom: 16px;
+                };
+
+                .downloadbtn {
+                    display: block;
+                    width: 132px;
+                    height: 94px;
+                    border: 1px solid #f2f2f2;
+                    border-radius: 18px;
+                    background-color: #f7f7f7;
+                    color: #888;
+
+                    .icon {
+                        display: block;
+                        width: 40px;
+                        height: 45px;
+                        margin: 8px auto 12px;
+                        transition: all .3s ease;
+
+                        .anzhuo {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    };
+
+                    .desc {
+                        display: block;
+                        color: #888888;
+                        font-size: 14px;
+                        text-align: center;
+                    };
+                };
+
+                .downloadbtn:hover {
+                    .icon {
+                        color: #1A1A1A;
+                    };
+
+                    .desc {
+                        color: #1A1A1A;
+                    };
+                };
+
+            };
+
+        };
+
+    };
+}
+
+/* footer */
+.footer_box {
+    width: 100%;
+    height: 73px;
+    padding: 20px 0;
+    margin-top: 34px;
+    background-color: #fff;
+
+    .footer {
+        width: 1260px;
+        height: 48px;
+        padding: 15px 0 10px 0;
+        margin: 0 auto;
+        text-align: center;
+
+        .logojump {
+            .footerlogo1 {
+                width: 118px;
+                height: 36px;
+            };
+
+            .footerlogo2 {
+                width: 149px;
+                height: 36px;
+            };
+        };
+
+        .footerinfo {
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 10px;
+            line-height: 22px;
+
+            .jumplink {
+                color: #333;
+
+                a:hover {
+                    text-decoration: underline;
+                };
+            };
+
+            .copyright {
+                color: #999;
+
+                a {
+                    color: #999;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                };
+            };
+
+        };
+    };
+}

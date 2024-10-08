@@ -1,0 +1,90 @@
+/* 对应磨损显示盒子的背景色 */
+.showvalue.factorynew {
+    background-color: green;
+}
+.showvalue.slightlyworn {
+    background-color: #5cb85c;
+}
+.showvalue.wellworn {
+    background-color: #f0ad4e;
+}
+.showvalue.battlescarred {
+    background-color: #d9534f;
+}
+.showvalue.heavilyworn {
+    background-color: #993a38;
+}
+
+/* DOTA用 */
+.level.putong {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-right: 2px;
+    background-color: #33353b;
+    font-size: 12px;
+    color: #fff;
+}
+.level.zhibao {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-right: 2px;
+    background-color: #9acc4c;
+    font-size: 12px;
+    color: #fff;
+}
+.level.zhenxi {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-right: 2px;
+    background-color: #7c8ff5;
+    font-size: 12px;
+    color: #fff;
+}
+.level.shenhua {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-right: 2px;
+    background-color: #a876f9;
+    font-size: 12px;
+    color: #fff;
+}
+.level.buxiu {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-right: 2px;
+    background-color: #f2b166;
+    font-size: 12px;
+    color: #fff;
+}
+.level.chuanshuo {
+    display: block;
+    position: absolute;
+    z-index: 11;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 5px;
+    margin-right: 2px;
+    background-color: #dc5eea;
+    font-size: 12px;
+    color: #fff;
+}
