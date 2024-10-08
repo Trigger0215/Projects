@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.foot {
+    width: 1200px;
+    height: 159px;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+}
+.foot a {
+    text-decoration: none;
+    color: #ccc;
+}
+.foot .foot_navi {
+    position: relative;
+}
+/* 下拉框 */
+.foot .foot_navi .droplist {
+    width: 78px;
+    height: 98px;
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 22px;
+    left: 195px;
+    display: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+}
+.foot .foot_navi .drop:hover {
+    border: 1px solid #ccc;
+    border-right: none;
+}
+.foot .foot_navi .drop:hover + .droplist {
+    display: block;
+    z-index: 101;
+}
+.foot .foot_navi .droplist:hover {
+    display: block;
+    z-index: 101;
+}
+
+.foot .foot_navi .droplist a:hover {
+    color: #000;
+}
+.foot .foot_navi .droplist a:hover > div {
+    background-color: #aaa;
+}
+.foot .foot_navi .droplist div {
+    height: 25px;
+    line-height: 25px;
+}
+.foot .foot_navi a {
+    text-decoration: none;
+    color: #ccc;
+}
+.foot .foot_navi a:hover {
+    color: #ff6600;
+}
+.foot .foot_navi {
+    height: 40px;
+    text-align: center;
+}
+.foot .foot_navi .block {
+    font-size: 14px;
+    height: 20px;
+    display: inline-block;
+    border-left: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 0 8px 0 8px;
+    text-align: center;
+}
+.foot .foot_navi .first {
+    border-left: none;
+}
+.foot .foot_info {
+    font-size: 12px;
+    text-align: center;
+}
+.foot .foot_info .copyright {
+    margin: 10px 0 10px 0;
+}
+.foot .foot_info .report {
+    margin-top: 20px;
+}
+.foot .foot_info .foot_pic .pic_box {
+    display: inline-block;
+}
+.foot .foot_info .foot_pic .pic1 {
+    width: 65px;
+    height: 30px;
+    background-image: url("../assets/foot1.png");
+    background-size: 100% 100%;
+}
+.foot .foot_info .foot_pic .pic2 {
+    width: 60px;
+    height: 30px;
+    background-image: url("../assets/foot2.gif");
+    background-size: 100% 100%;
+}
+.foot .foot_info .foot_pic .pic3 {
+    width: 50px;
+    height: 30px;
+    background-image: url("../assets/foot.png");
+    background-repeat: no-repeat;
+    background-position: -106px 0;
+}
+.foot .foot_info .foot_pic .pic4 {
+    width: 85px;
+    height: 30px;
+    background-image: url("../assets/foot.png");
+    background-repeat: no-repeat;
+    background-position: -523px 0;
+}
+.foot .foot_info .foot_pic .pic5 {
+    width: 96px;
+    height: 30px;
+    background-image: url("../assets/foot.png");
+    background-repeat: no-repeat;
+    background-position: -613px 0;
+}

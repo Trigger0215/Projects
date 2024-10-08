@@ -1,0 +1,250 @@
+/* navi栏 */
+.navi {
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.navi .img {
+    width: 136px;
+    height: 54px;
+    display: inline-block;
+}
+.navi .img img {
+    width: 136px;
+    height: 54px;
+}
+.navi .navi_box {
+    width: 60px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+}
+.navi .carousel {
+    width: 53px;
+    height: 17px;
+    position: absolute;
+    top: 19px;
+    left: 537px;
+}
+.navi .carousel .swiper .swiper-wrapper .swiper-slide img {
+    width: 53px;
+    height: 17px;
+}
+.navi a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.navi a:hover {
+    color: #0088a4;
+}
+/* navi中选中显示框1 */
+.navi .buy_together_jump .buy_together:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.buy_together_drop_list {
+    width: 238px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 270px;
+    display: none;
+}
+.navi .buy_together_jump:hover + .buy_together_drop_list {
+    display: block;
+    z-index: 101;
+}
+.buy_together_drop_list:hover {
+    display: block;
+}
+.navi .buy_together_drop_list a {
+    font-size: 12px;
+    line-height: 10px;
+    display: inline-block;
+    margin: 15px;
+}
+.navi .buy_together_drop_list a:hover {
+    text-decoration: underline;
+}
+/* navi中选中显示框2 */
+.navi .ticket_jump .ticket:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.ticket_drop_list {
+    width: 405px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 475px;
+    display: none;
+}
+.navi .ticket_jump:hover + .ticket_drop_list {
+    display: block;
+    z-index: 101;
+}
+.ticket_drop_list:hover {
+    display: block;
+}
+.navi .ticket_drop_list a {
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+.navi .ticket_drop_list a:hover {
+    text-decoration: underline;
+}
+/* navi中选中显示框3 */
+.navi .help_jump .help:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.help_drop_list {
+    width: 487px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 605px;
+    display: none;
+}
+.navi .help_jump:hover + .help_drop_list {
+    display: block;
+    z-index: 101;
+}
+.help_drop_list:hover {
+    display: block;
+}
+.navi .help_drop_list a {
+    font-size: 12px;
+    line-height: 10px;
+    display: inline-block;
+    margin: 15px;
+}
+.navi .help_drop_list a:hover {
+    text-decoration: underline;
+}
+/* navi中选中显示框4 */
+.navi .local_jump .local:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.local_drop_list {
+    width: 480px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 605px;
+    display: none;
+}
+.navi .local_jump:hover + .local_drop_list {
+    display: block;
+    z-index: 101;
+}
+.local_drop_list:hover {
+    display: block;
+}
+.navi .local_drop_list a {
+    font-size: 12px;
+    line-height: 10px;
+    display: inline-block;
+    margin: 14px;
+}
+.navi .local_drop_list a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    height: 590px;
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, #bbe5e4 1%, #fff 100%);
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.main .main_box {
+    width: 1000px;
+    height: 490px;
+    margin: 50px auto;
+}
+.main .main_box .box_head {
+    width: 998px;
+    height: 40px;
+    border: 1px solid #03cde9;
+    border-radius: 10px 10px 0 0;
+    background-color: #03cde9;
+}
+.main .main_box .box_head a {
+    text-decoration: none;
+    color: #fff;
+}
+.main .main_box .box_head a:hover > .help {
+    color: #03cde9;
+    background-color: #fff;
+    width: 118px;
+    border: 1px solid #fff;
+    border-radius: 10px 0 0 0;
+}
+.main .main_box .box_head a:hover > div {
+    color: #03cde9;
+    background-color: #fff;
+}
+.main .main_box .box_head .help {
+    width: 120px;
+    height: 38px;
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+}
+.main .main_box .box_head .report {
+    width: 120px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+}
+.main .main_box .box_content {
+    width: 910px;
+    height: 365px;
+    padding: 42px 44px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(to right, #ccc, #fff);
+    border-radius: 0 0 10px 10px;
+}
+.main .main_box .box_content .kf1 {
+    width: 432px;
+    height: 325px;
+    float: left;
+    background-image: url("../assets/kf-bg-1.png");
+    background-repeat: no-repeat;
+}
+.main .main_box .box_content .kf2 {
+    width: 432px;
+    height: 325px;
+    float: left;
+    margin-left: 40px;
+    background-image: url("../assets/kf-bg-2.png");
+    background-repeat: no-repeat;
+}

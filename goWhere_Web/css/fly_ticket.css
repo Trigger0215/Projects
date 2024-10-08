@@ -1,0 +1,554 @@
+li {
+    list-style: none;
+    display: inline-block;
+}
+.navi {
+    width: 1200px;
+    height: 55px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.navi .img {
+    width: 136px;
+    height: 54px;
+    display: inline-block;
+}
+.navi .img img {
+    width: 136px;
+    height: 54px;
+}
+.navi .navi_box {
+    width: 60px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+}
+.navi .carousel {
+    width: 53px;
+    height: 17px;
+    position: absolute;
+    top: 19px;
+    left: 537px;
+}
+.navi .carousel .swiper .swiper-wrapper .swiper-slide img {
+    width: 53px;
+    height: 17px;
+}
+.navi a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.navi a:hover {
+    color: #0088a4;
+}
+/* navi中选中显示框1 */
+.navi .buy_together_jump .buy_together:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.buy_together_drop_list {
+    width: 238px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 270px;
+    display: none;
+}
+.navi .buy_together_jump:hover + .buy_together_drop_list {
+    display: block;
+    z-index: 101;
+}
+.buy_together_drop_list:hover {
+    display: block;
+}
+.navi .buy_together_drop_list a {
+    font-size: 12px;
+    line-height: 10px;
+    display: inline-block;
+    margin: 15px;
+}
+.navi .buy_together_drop_list a:hover {
+    text-decoration: underline;
+}
+/* navi中选中显示框2 */
+.navi .ticket_jump .ticket:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.ticket_drop_list {
+    width: 405px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 475px;
+    display: none;
+}
+.navi .ticket_jump:hover + .ticket_drop_list {
+    display: block;
+    z-index: 101;
+}
+.ticket_drop_list:hover {
+    display: block;
+}
+.navi .ticket_drop_list a {
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+.navi .ticket_drop_list a:hover {
+    text-decoration: underline;
+}
+/* navi中选中显示框3 */
+.navi .help_jump .help:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.help_drop_list {
+    width: 487px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 605px;
+    display: none;
+}
+.navi .help_jump:hover + .help_drop_list {
+    display: block;
+    z-index: 101;
+}
+.help_drop_list:hover {
+    display: block;
+}
+.navi .help_drop_list a {
+    font-size: 12px;
+    line-height: 10px;
+    display: inline-block;
+    margin: 15px;
+}
+.navi .help_drop_list a:hover {
+    text-decoration: underline;
+}
+/* navi中选中显示框4 */
+.navi .local_jump .local:hover {
+    width: 58px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.local_drop_list {
+    width: 480px;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 101;
+    position: absolute;
+    top: 65px;
+    left: 605px;
+    display: none;
+}
+.navi .local_jump:hover + .local_drop_list {
+    display: block;
+    z-index: 101;
+}
+.local_drop_list:hover {
+    display: block;
+}
+.navi .local_drop_list a {
+    font-size: 12px;
+    line-height: 10px;
+    display: inline-block;
+    margin: 14px;
+}
+.navi .local_drop_list a:hover {
+    text-decoration: underline;
+}
+
+.reservation {
+    width: auto;
+    height: 336px;
+    background-image: url("../assets/fly_ticket_head_background-image.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.reservation .reservation_box {
+    width: 1200px;
+    height: 315px;
+    margin: 0 auto;
+}
+.reservation .reservation_box .research {
+    width: 650px;
+    height: 315px;
+    background-color: #fff;
+    border: 6px solid #00afc7;
+    margin-top: 9px;
+}
+.reservation .reservation_box .research .head {
+    width: 650px;
+    height: 40px;
+}
+.reservation .reservation_box .research .head h2, .reservation .reservation_box .research .head h6, .reservation .reservation_box .research .head .arrow {
+    display: inline-block;
+    line-height: 40px;
+}
+.reservation .reservation_box .research .head h2 {
+    font-size: 26px;
+    margin-left: 10px;
+}
+.reservation .reservation_box .research .head h6 {
+    margin-left: 170px;
+}
+.reservation .reservation_box .research .head .arrow {
+    width: 36px;
+    height: 18px;
+    background-image: url("../assets/ico_arr_ad.png");
+    margin-left: 70px;
+    vertical-align: sub;
+}
+.reservation .reservation_box .research .head .arrow:hover {
+    background-image: url("../assets/ico_arr_ad.png");
+    background-position: 0 -18px;
+}
+.reservation .reservation_box .research .choose {
+    width: 650px;
+    height: 50px;
+}
+.reservation .reservation_box .research .choose a {
+    color: gray;
+    text-decoration: none;
+}
+.reservation .reservation_box .research .choose a:hover {
+    color: #000;
+    font-weight: bold;
+}
+.reservation .reservation_box .research .choose a:hover > .incountry {
+    border-bottom: 2px solid #008db5;
+}
+.reservation .reservation_box .research .choose a:hover > .outcountry {
+    border-bottom: 2px solid #008db5;
+}
+.reservation .reservation_box .research .choose .incountry {
+    width: 120px;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    margin-left: 10px;
+    display: inline-block;
+}
+.reservation .reservation_box .research .choose .outcountry {
+    width: 120px;
+    height: 48px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+.reservation .reservation_box .research .main {
+    width: 610px;
+    height: 200px;
+    background-color: #f5fdfb;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+.reservation .reservation_box .research .main .goback {
+    color: #ccc;
+}
+.reservation .reservation_box .research .main .fromto {
+    width: 610px;
+    height: 100px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.reservation .reservation_box .research .main .fromto .input1, .reservation .reservation_box .research .main .fromto .input1 input {
+    width: 248px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+}
+.reservation .reservation_box .research .main .fromto .input2, .reservation .reservation_box .research .main .fromto .input2 input {
+    width: 248px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+.reservation .reservation_box .research .main .fromto .change {
+    width: 24px;
+    height: 60px;
+    background-image: url("../assets/bg_wrap.png");
+    background-position: 214px 62px;
+    position: absolute;
+    top: 22px;
+    left: 282px;
+    z-index: 101;
+}
+.reservation .reservation_box .research .main .fromto .change:hover {
+    background-image: url("../assets/bg_wrap.png");
+    background-position: 189px 62px;
+    z-index: 101;
+}
+.reservation .reservation_box .research .main .fromto .input3, .reservation .reservation_box .research .main .fromto .input3 input {
+    width: 248px;
+    height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 165px;
+}
+.reservation .reservation_box .research .main .fromto .input4, .reservation .reservation_box .research .main .fromto .input4 input {
+    width: 248px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    left: 165px;
+}
+.reservation .reservation_box .research .main .fromto .locate1 {
+    position: absolute;
+    top: 15px;
+    left: 240px;
+}
+.reservation .reservation_box .research .main .fromto .locate2 {
+    position: absolute;
+    top: 65px;
+    left: 240px;
+}
+.reservation .reservation_box .research .main .fromto .calendar1 {
+    position: absolute;
+    top: 15px;
+    left: 540px;
+}
+.reservation .reservation_box .research .main .fromto .calendar2 {
+    position: absolute;
+    top: 65px;
+    left: 540px;
+}
+.reservation .reservation_box .research .main .telphone {
+    color: red;
+    margin-left: 30px;
+}
+.reservation .reservation_box .research .main .footer {
+    width: 610px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 14px;
+}
+.reservation .reservation_box .research .main .footer .outcountry_phone {
+    display: inline-block;
+    color: #ccc;
+    margin: 0 30px 0 30px;
+}
+.reservation .reservation_box .research .main .footer .safe_info {
+    display: inline-block;
+    color: #ccc;
+}
+.reservation .reservation_box .research .main .footer .btn {
+    display: inline-block;
+    width: 128px;
+    height: 38px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #ff5622;
+    border: 1px solid #ff5622;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* main */
+.main_body {
+    width: 1200px;
+    height: 1600px;
+    margin: 0 auto;
+}
+.main_body .main {
+    width: 912px;
+    height: 1600px;
+    margin: 0 auto;
+    float: left;
+}
+.main_body .main .carousel {
+    width: 912px;
+    height: 170px;
+}
+.main_body .main .carousel .swiper .swiper-wrapper .swiper-slide img {
+    width: 912px;
+    height: 170px;
+}
+.main_body .main .airline_show {
+    width: 912px;
+    height: 410px;
+    margin-top: 50px;
+}
+.main_body .main .airline_show .title_box {
+    width: 912px;
+    height: 60px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+.main_body .main .airline_show .title_box .title {
+    font-size: 25px;
+    color: #3b81ba;
+    line-height: 50px;
+}
+.main_body .main .airline_show .title_box .pic {
+    width: 180px;
+    height: 60px;
+    background-image: url("../assets/bg_flyhd.png");
+    background-repeat: no-repeat;
+}
+.main_body .main .airline_show .title_box .select .province, .main_body .main .airline_show .title_box .select .month {
+    font-size: 12px;
+    width: 70px;
+    height: 18px;
+    border: none;
+    outline: none;
+    vertical-align: top;
+}
+.main_body .main .airline_show .title_box .area ul .content {
+    width: 50px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    color: #000;
+    margin-right: -5px;
+}
+.main_body .main .airline_show .title_box .area ul .content:hover {
+    color: #fff;
+    background-color: #58b1cf;
+}
+.main_body .main .airline_show .title_box .area ul .title {
+    width: 50px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: -5px;
+    color: #fff;
+    background-color: #58b1cf;
+}
+.main_body .main .airline_show .airline_list {
+    width: 910px;
+    height: 310px;
+    border: 1px solid #ccc;
+    padding: 20px 0 20px 0;
+}
+.main_body .main .airline_show .airline_list .airline_list_left {
+    width: 454px;
+    height: 310px;
+    border-right: 1px solid #ccc;
+    float: left;
+}
+.main_body .main .airline_show .airline_list .airline_list_left li {
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px 30px;
+}
+.main_body .main .airline_show .airline_list .airline_list_left li:hover {
+    color: #4c9bb5;
+}
+.main_body .main .airline_show .airline_list .airline_list_left li .dire {
+    display: inline-block;
+    width: 27px;
+    height: 13px;
+    background-image: url("../assets/icon_dire.png");
+    background-position: 6px 44px;
+}
+.main_body .main .airline_show .airline_list .airline_list_left .space {
+    display: block;
+    width: 100%;
+    height: 15px;
+}
+.main_body .main .airline_show .airline_list .airline_list_left a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main_body .main .airline_show .airline_list .airline_list_right {
+    width: 455px;
+    height: 310px;
+    float: left;
+}
+.main_body .main .airline_show .airline_list .airline_list_right li {
+    display: block;
+    font-size: 15px;
+    margin: 0 0 10px 30px;
+}
+.main_body .main .airline_show .airline_list .airline_list_right li:hover {
+    color: #4c9bb5;
+}
+.main_body .main .airline_show .airline_list .airline_list_right li .dire {
+    display: inline-block;
+    width: 27px;
+    height: 13px;
+    background-image: url("../assets/icon_dire.png");
+    background-position: 6px 44px;
+}
+.main_body .main .airline_show .airline_list .airline_list_right .space {
+    display: block;
+    width: 100%;
+    height: 15px;
+}
+.main_body .main .airline_show .airline_list .airline_list_right a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+/* main's aside */
+.main_body .aside {
+    width: 272px;
+    height: 300px;
+    margin: 0 auto;
+    float: left;
+    margin-left: 10px;
+}
+.main_body .aside .choose_seat {
+    width: 272px;
+    height: 113px;
+    border: 1px solid #ccc;
+    border-top: 5px solid #01afc7;
+    margin-bottom: 10px;
+}
+.main_body .aside .choose_seat img {
+    width: 272px;
+    height: 113px;
+}
+.main_body .aside .notice {
+    width: 272px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f3f3f3;
+    color: #2b8fc5;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.main_body .aside .note {
+    width: 272px;
+    border: 1px solid #ccc;
+    border-top: 5px solid #01afc7;
+}
+.main_body .aside .note a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+}

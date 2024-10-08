@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.head_navi {
+    font-size: 12px;
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+.head_navi .head_navi_box {
+    margin-top: 5px;
+    height: 16px;
+    float: right;
+    border-right: 1px solid #ccc;
+    padding: 0 15px 0 15px;
+}
+.head_navi .head_navi_box img {
+    margin-right: -5px;
+    vertical-align: baseline;
+}
+.head_navi .last {
+    border: none;
+}
+.head_navi a {
+    text-decoration: none;
+    color: #000;
+}
+.head_navi .nochange .head_navi_box img {
+    width: 16px;
+    height: 16px;
+    margin-right: -5px;
+    vertical-align: sub;
+}
+.head_navi a:hover {
+    color: #00a3d2;
+}
+.head_navi .nochange:hover {
+    color: #000;
+}
+.head_navi .head_navi_box a {
+    color: #00d0d4;
+}
+
+/* 下拉框 */
+.info_drop_box {
+    width: 82px;
+    height: 299px;
+    border: 1px solid black;
+    background-color: #fff;
+    position: absolute;
+    top: 22px;
+    right: 155px;
+    display: none;
+}
+/* hover时下拉框显示 */
+.head_navi .info_drop:hover + .info_drop_box {
+    display: block;
+    z-index: 101;
+}
+/*下拉框持久显示 */
+.info_drop_box:hover {
+    display: block;
+    z-index: 101;
+}
+.head_navi .info_drop_box a:hover {
+    color: #fff;
+}
+.head_navi .info_drop_box .infos {
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+}
+.head_navi .info_drop_box a:hover .infos {
+    background-color: #2288d3;
+}
